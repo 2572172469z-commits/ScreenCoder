@@ -1,0 +1,11 @@
+# Node / JavaScript
+node_modules/
+dist/
+.DS_Store
+
+# Environments
+.env
+.venv
+
+# API keys
+doubao_api.txt

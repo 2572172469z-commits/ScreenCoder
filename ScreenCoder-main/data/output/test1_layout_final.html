@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>
+   Bounding Boxes Layout
+  </title>
+<style>
+   body, html {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .container { 
+                position: relative;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+            }
+            .box {
+                position: absolute;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+            .box > .container {
+                display: grid;
+                width: 100%;
+                height: 100%;
+            }
+  </style>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+<div class="box" id="1" style="left: 0.0%; top: 0.0%; width: 2.8503562945368173%; height: 99.70760233918129%;">
+<div class="flex flex-col items-center space-y-6 p-2">
+<button class="focus:outline-none">
+<svg class="h-6 w-6 text-black" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</button>
+<div class="flex flex-col items-center">
+<svg class="h-6 w-6 text-black" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+<span class="text-sm text-black mt-1">
+       首页
+      </span>
+</div>
+<div class="flex flex-col items-center">
+<svg class="h-6 w-6 text-black" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+<span class="text-sm text-black mt-1">
+       Shorts
+      </span>
+</div>
+<div class="flex flex-col items-center">
+<svg class="h-6 w-6 text-black" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 5v14l-5-7-5 7V5m10 0v14l-5-7-5 7V5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+<span class="text-sm text-black mt-1">
+       订阅
+      </span>
+</div>
+<div class="flex flex-col items-center">
+<svg class="h-6 w-6 text-black" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-12 0v1z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+<span class="text-sm text-black mt-1">
+       我
+      </span>
+</div>
+</div>
+</div>
+<div class="box" id="2" style="left: 3.0581947743467937%; top: 0.0%; width: 96.76365795724465%; height: 6.900584795321637%;">
+<div class="flex items-center justify-between bg-white px-4 py-2 border-b border-gray-200">
+<!-- 左侧YouTube区域 -->
+<div class="flex items-center">
+<div class="flex items-center justify-center w-8 h-8 bg-red-600 rounded mr-2">
+<span class="text-white text-xl font-bold">
+        ▶
+       </span>
+</div>
+<div class="flex items-center">
+<span class="text-xl font-bold text-black">
+        YouTube
+       </span>
+<span class="text-base text-gray-700 ml-1">
+        HK
+       </span>
+</div>
+</div>
+<!-- 中间搜索区域 -->
+<div class="flex items-center flex-1 max-w-xl mx-8">
+<input class="w-full border border-gray-300 rounded-l px-3 py-1 focus:outline-none focus:ring-1 focus:ring-blue-500" placeholder="搜索" type="text"/>
+<button class="bg-gray-100 border border-l-0 border-gray-300 rounded-r px-4 py-1 focus:outline-none focus:ring-1 focus:ring-blue-500">
+<svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</button>
+<button class="ml-3 bg-gray-100 border border-gray-300 rounded px-4 py-1 focus:outline-none focus:ring-1 focus:ring-blue-500">
+<svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 19v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2h8a2 2 0 002-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+<path d="M19 10l-7-7m0 0l-7 7m7-7v14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</button>
+</div>
+<!-- 右侧功能区域 -->
+<div class="flex items-center">
+<button class="flex items-center bg-gray-100 border border-gray-300 rounded px-3 py-1 mr-4">
+<svg class="w-5 h-5 text-gray-700 mr-1" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+<span class="text-gray-700">
+        创建
+       </span>
+</button>
+<button class="bg-gray-100 border border-gray-300 rounded px-3 py-1 mr-4">
+<svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+</path>
+</svg>
+</button>
+<div class="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center">
+<span class="text-white text-xl font-bold">
+        Y
+       </span>
+</div>
+</div>
+</div>
+</div>
+<div class="box" id="3" style="left: 3.0581947743467937%; top: 6.900584795321637%; width: 63.657957244655584%; height: 3.625730994152047%;">
+<div class="flex items-center space-x-2">
+<div class="bg-black text-white px-4 py-2 rounded-md">
+      全部
+     </div>
+<div class="bg-gray-100 text-black px-4 py-2 rounded-md">
+      播客
+     </div>
+<div class="bg-gray-100 text-black px-4 py-2 rounded-md">
+      游戏
+     </div>
+<div class="bg-gray-100 text-black px-4 py-2 rounded-md">
+      直播
+     </div>
+<div class="bg-gray-100 text-black px-4 py-2 rounded-md">
+      数学
+     </div>
+<div class="bg-gray-100 text-black px-4 py-2 rounded-md">
+      篮球
+     </div>
+<div class="bg-gray-100 text-black px-4 py-2 rounded-md">
+      足球
+     </div>
+<div class="bg-gray-100 text-black px-4 py-2 rounded-md">
+      动画
+     </div>
+<div class="bg-gray-100 text-black px-4 py-2 rounded-md">
+      最近上传
+     </div>
+<div class="bg-gray-100 text-black px-4 py-2 rounded-md">
+      发现新视频
+     </div>
+</div>
+</div>
+<div class="box" id="4" style="left: 3.0581947743467937%; top: 10.584795321637428%; width: 96.55581947743468%; height: 89.00584795321637%;">
+<div class="grid grid-cols-3 gap-4 p-4">
+<div class="flex flex-col bg-white rounded shadow">
+<div class="relative">
+<img class="w-full h-48" src="cropped_images/ph0.png"/>
+<span class="absolute bottom-2 right-2 text-white bg-black/50 px-1 py-0.5 rounded text-xs">
+        26:24
+       </span>
+</div>
+<div class="p-2 space-y-1">
+<h3 class="text-sm font-medium">
+        The Key Equation Behind Probability
+       </h3>
+<p class="text-xs text-gray-500">
+        Artem Kirsanov
+       </p>
+<p class="text-xs text-gray-500">
+        27万次观看 · 10个月前
+       </p>
+</div>
+</div>
+<div class="flex flex-col bg-white rounded shadow">
+<div class="relative">
+<img class="w-full h-48" src="cropped_images/ph1.png"/>
+<span class="absolute bottom-2 right-2 text-white bg-black/50 px-1 py-0.5 rounded text-xs">
+        49:40
+       </span>
+</div>
+<div class="p-2 space-y-1">
+<h3 class="text-sm font-medium">
+        Statistical mechanics of extensive-width shallow neural networks near interpolation
+       </h3>
+<p class="text-xs text-gray-500">
+        ICTP Quantitative Life Sciences
+       </p>
+<p class="text-xs text-gray-500">
+        48次观看 · 22小时前
+       </p>
+</div>
+</div>
+<div class="flex flex-col bg-white rounded shadow">
+<div class="relative">
+<img class="w-full h-48" src="cropped_images/ph2.png"/>
+<span class="absolute bottom-2 right-2 text-white bg-black/50 px-1 py-0.5 rounded text-xs">
+        11:51
+       </span>
+</div>
+<div class="p-2 space-y-1">
+<h3 class="text-sm font-medium">
+        Wall Street Quant interview be likes | 華爾街量化交易面試 (中英文字幕)
+       </h3>
+<p class="text-xs text-gray-500">
+        Hsi-Wei
+       </p>
+<p class="text-xs text-gray-500">
+        9.3万次观看 · 1个月前
+       </p>
+</div>
+</div>
+<div class="flex flex-col bg-white rounded shadow">
+<div class="relative">
+<img class="w-full h-48" src="cropped_images/ph3.png"/>
+</div>
+<div class="p-2 space-y-1">
+<h3 class="text-sm font-medium">
+        EVE Online: 加入我们，开启宇宙之旅
+       </h3>
+<p class="text-xs text-gray-500">
+        赞助广告 · EVE Online
+       </p>
+</div>
+</div>
+<div class="flex flex-col bg-white rounded shadow">
+<div class="relative">
+<img class="w-full h-48" src="cropped_images/ph4.png"/>
+<span class="absolute bottom-2 right-2 text-white bg-black/50 px-1 py-0.5 rounded text-xs">
+        12:44
+       </span>
+</div>
+<div class="p-2 space-y-1">
+<h3 class="text-sm font-medium">
+        "Dopamine Loading" is the EASIEST way to get ADDICTED to studying
+       </h3>
+<p class="text-xs text-gray-500">
+        Matthew Smith
+       </p>
+</div>
+</div>
+<div class="flex flex-col bg-white rounded shadow">
+<div class="relative">
+<img class="w-full h-48" src="cropped_images/ph5.png"/>
+<span class="absolute bottom-2 right-2 text-white bg-black/50 px-1 py-0.5 rounded text-xs">
+        36:54
+       </span>
+</div>
+<div class="p-2 space-y-1">
+<h3 class="text-sm font-medium">
+        But what is quantum computing? (Grover's Algorithm)
+       </h3>
+<p class="text-xs text-gray-500">
+        3Blue1Brown
+       </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
